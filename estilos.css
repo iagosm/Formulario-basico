@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --amarelo:rgb(235, 199, 0);
+    --azulescuro:rgb(81, 81, 233);
+}
+@font-face {
+    font-family:amor;
+    src: url("love.ttf");
+}
+
+body{
+    background: linear-gradient(90deg,rgb(235, 199, 0),rgb(81, 81, 233));
+    display: flex;
+    /* Display Flex faz com que os itens fiquem em formato fileira  */
+    flex-direction: column;
+    /* O direcionamento  column deixa eles arrumados */
+    gap: 20px;
+    /* justify-content controla alinhamento na horizontal  */
+    justify-content: center;
+    /* align-items controla alinhamento vertical  */
+    align-items: center;
+    height: 100vh;
+
+}
+.box{
+    background: rgb(0, 0, 0, 0.4);
+    width: 20%;
+    padding: 15px;
+    border-radius: 1rem;
+}
+.box label,span{
+    color: white;
+}
+.box input[type="submit"]{
+    background-color: var(--amarelo);
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 8px;
+    display: block;   
+    margin: 0 auto;
+    border: 1px solid transparent ;
+    transition: 1s;
+}
+.box input[type="submit"]:hover{
+    background: var(--azulescuro);
+    border: 1px solid white;
+}
+/* !! Para centralizar o botão transforma-lo em uma div:display box   */
+.box textarea{
+    resize: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+}
+.box input[type="text"],input[type="email"], input[type="file"],input[type="select"]{
+    padding: 3px;
+    border-radius: 8px;
+}
+.box input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    background: rgb(187, 183, 181);
+}
+h1{
+    color: aliceblue;
+    font-family: amor;
+    font-size: 30px;
+}
+img{
+    padding: 0;
+    margin: 0 auto;
+}
